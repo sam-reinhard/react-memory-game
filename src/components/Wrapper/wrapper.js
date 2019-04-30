@@ -6,7 +6,7 @@ function Wrapper(props) {
     <div>
         <h1>Flag Memory Game</h1> 
         <div className="container">
-            <h2>Your Score: </h2>
+            <h2>Your Score: {props.score} </h2>
             <div className="row text-center">{props.children}</div>
         </div>
     </div> 
