@@ -5,11 +5,11 @@ import images from "./images.json";
 import "./App.css";
 
 let guesses = [];
-let score = 0;
 
 class App extends Component {
   state= {
-    images
+    images,
+    score: 0
   };
 
   guess = id => {
@@ -24,19 +24,25 @@ class App extends Component {
       if (id === guesses[i-1]){
         alert("you already guessed that");
         guesses = [];
-        score = 0;
+        this.setState({
+          score: 0
+        });
+
         return;
       } 
     }
-    score++
-    console.log("Score: " + score);
+    this.setState({
+      score: this.state.score + 1
+    });
     // shuffle the images
     
   };
 
   render(){
     return (
-      <Wrapper>
+      <Wrapper
+      score={this.state.score}
+      >
         {this.state.images.map(image => (
           <Image
           id={image.id}
