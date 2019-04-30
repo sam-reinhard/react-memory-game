@@ -9,6 +9,10 @@ class App extends Component {
     images
   };
 
+  guess = id => {
+    console.log(id);
+  };
+
   render(){
     return (
       <Wrapper>
@@ -17,6 +21,7 @@ class App extends Component {
           id={image.id}
           key={image.id}
           link={image.link}
+          guess={this.guess}
           />
         ))}
       </Wrapper>
