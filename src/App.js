@@ -10,7 +10,7 @@ class App extends Component {
   state= {
     images,
     score: 0,
-    message: "Click a flag to begin!"
+    message: "Click a flag to begin. When you get 12 correct in a row, you've won!"
   };
 
   guess = id => {
