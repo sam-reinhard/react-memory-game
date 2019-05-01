@@ -15,3 +15,5 @@ To make things even more difficult on the user, the images rendered to the page 
 Finally, once the user's score is reset after an incorrect guess, the game restarts.
 
 ## Deployed Application
+
+https://sam-reinhard.github.io/react-memory-game
