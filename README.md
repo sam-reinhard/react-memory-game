@@ -1,5 +1,3 @@
-
-
 # React Memory Game
 
 ## Summary
