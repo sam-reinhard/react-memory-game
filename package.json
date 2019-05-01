@@ -2,7 +2,7 @@
   "name": "react-memory-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://sam-reinhard.gihub.io/react-memory-game",
+  "homepage": "http://sam-reinhard.github.io/react-memory-game",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
