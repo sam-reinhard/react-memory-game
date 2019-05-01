@@ -35,8 +35,16 @@ class App extends Component {
       score: this.state.score + 1
     });
     // shuffle the images
-    
+    this.shuffle(images);
   };
+
+  shuffle = imagesArray => {
+    for (let i = imagesArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [imagesArray[i], imagesArray[j]] = [imagesArray[j], imagesArray[i]];
+    }
+    return imagesArray;
+  }
 
   render(){
     return (
